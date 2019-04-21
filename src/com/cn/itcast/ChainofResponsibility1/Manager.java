@@ -8,7 +8,7 @@ public abstract class Manager {
 
     protected Manager superior;
 
-    protected Manager(String name) {
+    public Manager(String name) {
         this.name = name;
     }
 
