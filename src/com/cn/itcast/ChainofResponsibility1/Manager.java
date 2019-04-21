@@ -3,5 +3,18 @@ package com.cn.itcast.ChainofResponsibility1;
 /**
  * Created by LJP on 2019/4/21.
  */
-public class Manager {
+public abstract class Manager {
+    protected String name;
+
+    protected Manager superior;
+
+    protected Manager(String name) {
+        this.name = name;
+    }
+
+    public void setSuperior(Manager superior) {
+        this.superior = superior;
+    }
+
+    public abstract void requestApplications(Request request);
 }
